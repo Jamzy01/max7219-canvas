@@ -18,6 +18,7 @@ impl<const W: usize> CanvasLayer<W> {
         }
     }
 
+    /// Turns off every pixel in the layer
     pub fn clear(&mut self) {
         self.buffer = [[0; 8]; W];
     }
@@ -48,6 +49,7 @@ impl<const W: usize> CanvasLayer<W> {
         }
     }
 
+    /// Is every pixel in the layer on
     pub fn is_full(&self) -> bool {
         for display in self.buffer {
             for row in display {
@@ -60,6 +62,7 @@ impl<const W: usize> CanvasLayer<W> {
         true
     }
 
+    /// Is every pixel in the layer off
     pub fn is_empty(&self) -> bool {
         for display in self.buffer {
             for row in display {
@@ -70,5 +73,18 @@ impl<const W: usize> CanvasLayer<W> {
         }
 
         true
+    }
+
+    /// Returns the layer where every pixel that is currently on is turned off, and every pixel thst is currently off is turned on
+    pub fn inverted(&self) -> Self {
+        let mut layer = CanvasLayer::new();
+
+        for (display_index, display) in self.buffer.iter().enumerate() {
+            for (y, row) in display.iter().enumerate() {
+                layer.buffer[display_index][y] = !row;
+            }
+        }
+
+        layer
     }
 }
