@@ -1,5 +1,6 @@
 [package]
 name = "max7219-canvas"
+description = "A library built for rust that makes setting and getting pixels from co-ordinates aswell as handling displaying different layers on top of each other"
 version = "0.1.0"
 edition = "2021"
 authors = ["James Gaunt"]
@@ -14,6 +15,7 @@ keywords = [
 ]
 readme = "./README.md"
 repository = "https://github.com/Jamzy01/max7219-canvas"
+license = "MIT"
 
 [dependencies]
 max7219 = "0.4.2"
