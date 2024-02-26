@@ -1,0 +1,19 @@
+[package]
+name = "max7219-canvas"
+version = "0.1.0"
+edition = "2021"
+authors = ["James Gaunt"]
+keywords = [
+    "no_std",
+    "embedded",
+    "max7219",
+    "led",
+    "matrix",
+    "display",
+    "canvas",
+]
+readme = "./README.md"
+repository = "https://github.com/Jamzy01/max7219-canvas"
+
+[dependencies]
+max7219 = "0.4.2"
