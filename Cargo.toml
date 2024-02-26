@@ -4,15 +4,7 @@ description = "A library built for rust that makes setting and getting pixels fr
 version = "0.1.0"
 edition = "2021"
 authors = ["James Gaunt"]
-keywords = [
-    "no_std",
-    "embedded",
-    "max7219",
-    "led",
-    "matrix",
-    "display",
-    "canvas",
-]
+keywords = ["no_std", "embedded", "arduino", "max7219", "led-matrix"]
 readme = "./README.md"
 repository = "https://github.com/Jamzy01/max7219-canvas"
 license = "MIT"
