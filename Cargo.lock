@@ -23,7 +23,7 @@ dependencies = [
 
 [[package]]
 name = "max7219-canvas"
-version = "0.1.0"
+version = "0.1.1"
 dependencies = [
  "max7219",
 ]

@@ -1,6 +1,6 @@
 [package]
 name = "max7219-canvas"
-description = "A library built for rust that makes setting and getting pixels from co-ordinates aswell as handling displaying different layers on top of each other"
+description = "A library built for rust that makes setting and getting pixels from co-ordinates easy, aswell as handling displaying different layers on top of each other. Works with the max7219 crate on 8x8 matrix displays."
 version = "0.1.1"
 edition = "2021"
 authors = ["James Gaunt"]

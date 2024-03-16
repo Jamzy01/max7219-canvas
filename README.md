@@ -1,6 +1,6 @@
 # Max 7219 Canvas
 
-A library built for rust that makes setting and getting pixels from co-ordinates aswell as handling displaying different layers on top of each other. Works with the [max7219](https://crates.io/crates/max7219) crate.
+A library built for rust that makes setting and getting pixels from co-ordinates easy, aswell as handling displaying different layers on top of each other. Works with the [max7219](https://crates.io/crates/max7219) crate on 8x8 matrix displays.
 
 [![Crates.io][crates-badge]][crates-url]
 [![Docs.rs][docs-badge]][docs-url]
